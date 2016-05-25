@@ -12,6 +12,10 @@ We will only evaluate the client side code and the criteria will be based mainly
 3. Clean, maintainable & easy­to­read
 4. Good architectural practices 
 
+## Live App on Heroku
+
+1. Please visit [Heroku](https://marfeel-vanilla-js-tt.herokuapp.com/)
+
 ## Instructions to Run locally
 
 1. Clone the repository
@@ -19,10 +23,10 @@ We will only evaluate the client side code and the criteria will be based mainly
 3. run `rackup`
 4. Open the browser with http://localhost:9292/
 
+
 ### Unit Tests
 
 1. open `SpecRunner.html` in the browser
-
 
 
 ## SCREENSHOTS
