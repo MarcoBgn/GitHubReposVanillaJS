@@ -23,9 +23,10 @@ body {
 }
 
 .container_data {
+  overflow: scroll;
   background-color: white;
-  width: 450px;
-  min-height: 40px;
+  width: 490px;
+  max-height: 768px;
   padding: 25px 25px 25px 25px;
   border: solid thin lightgray;
   border-radius: 16px 10px;
@@ -40,6 +41,47 @@ body {
   
   -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.repos_list {
+  position: relative;
+  top: -110px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, Serif;
+}
+
+.hr_div {
+  position: relative;
+  top: -110px;
+}
+
+.glyphicons_star {
+  position: relative;
+  width: 5px;
+  top: -145px;
+  left: 408px;
+}
+
+.glyphicons_star_img {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: -143px;
+  left: 360px;
+}
+
+.glyphicons_fork {
+  position: relative;
+  top: -145px;
+  left: 430px;
+}
+
+.glyphicons_fork_img {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: -143px;
+  left: 390px;
 }
 
 #input_text {
@@ -85,4 +127,15 @@ body {
   position: relative;
   top: -142px;
   left: 85px;
+}
+
+#list_title {
+  position: relative;
+  top: -130px;
+}
+
+#title_hr {
+  position: relative;
+  top: -135px;
+  height: 3px;
 }
