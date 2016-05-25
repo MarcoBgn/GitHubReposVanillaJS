@@ -1,12 +1,31 @@
 'use strict';
 
-describe('Function: displayHeader', function () {
-  var testData;
+describe('Function: displayFunctions', function () {
+  //CSS/layout is not tested.
+  var testData, testList;
   
-   testData = '{"login":"MarcoCode"}'
+  testData = '{"login":"Marfeel", "avatar_url": "public/images/glyphicons-50-star.png", "name": "Unit Test", "location": "Barcelona"}';
+  testList = '[{"name":"repo1", "forks":"4", "stargazers_count":"10"},{"name":"repo2","forks":"42", "stargazers_count":"1"}]'
   
-  it('parses the data JSON and creates the HTML layout for the user', function () {
-    displayHeader(testData);
-    expect(document.getElementById('usr_img')).toBeDefined();
+  describe('displayHeader()', function () {
+    it('parses the data JSON and creates the HTML layout for the user', function () {
+      displayHeader(testData);
+      expect(document.getElementById('usr_img')).toBeDefined();
+    });
+  });
+  
+  describe('displayList()', function () {
+    it('parses the data JSON and creates the HTML list of Repos ', function () {
+      displayList(testList);
+      expect(document.getElementById('list_title').innerHTML).toEqual("Repositories");
+    });
+  });
+  
+  describe('displayError()', function () {
+    it('displays a notice if the username is not found', function () {
+      displayError();
+      expect(document.getElementById('data_container').className).toEqual('container_error');
+      expect(document.getElementById('error_div').innerHTML).toEqual('Does not exist');
+    })
   })
 })
