@@ -31,19 +31,19 @@ We will only evaluate the client side code and the criteria will be based mainly
 
 The user can search a username of GitHub
 
-![](https://github.com/MarcoCode/GitHubReposVanillaJS/tree/master/images/initial.png?raw=true)
+![first](https://github.com/MarcoCode/GitHubReposVanillaJS/blob/master/images/initial.png?raw=true)
 
 #### Success Screen
 
 If the searched username does exist: The searched user profile is displayed with all his repositories
 
-![](https://github.com/MarcoCode/GitHubReposVanillaJS/tree/master/images/success.png?raw=true)
+![success](https://github.com/MarcoCode/GitHubReposVanillaJS/blob/master/images/success.png?raw=true)
 
 #### Error Screen
 
 If the searched username does not exist: An error is shown
 
-![](https://github.com/MarcoCode/GitHubReposVanillaJS/tree/master/images/error.png?raw=true)
+![error](https://github.com/MarcoCode/GitHubReposVanillaJS/blob/master/images/error.png?raw=true)
 
 
 
