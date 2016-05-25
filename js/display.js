@@ -1,8 +1,21 @@
 'use strict';
 
+function displayError() {
+  var userInfo = document.getElementById('user_info'), userError;
+  
+  cleanElement(userInfo);
+  
+  document.getElementById('data_container').setAttribute('class', 'container_error');
+  
+  generateElement(userInfo, userError, 'div', 'error_div')
+  .innerHTML = "Does not exist";
+}
+
 function displayHeader(data) {
   var userInfo = document.getElementById('user_info'), response, userAvatar, userName, userFullName, userLocation;
   response = JSON.parse(data);
+  
+  cleanElement(userInfo);
   
   document.getElementById('data_container').setAttribute('class', 'container_data');
   
@@ -11,9 +24,9 @@ function displayHeader(data) {
   generateElement(userInfo, userName, 'p', 'user_uname')
   .innerHTML = response.login;
   generateElement(userInfo, userFullName, 'h1', 'user_fullname')
-  .innerHTML = response.name;
+  .innerHTML = (response.name || "Name unavailable");
   generateElement(userInfo, userLocation, 'p', 'user_bio')
-  .innerHTML = (response.location || "location not available");
+  .innerHTML = (response.location || "location unavailable");
 }
 
 function displayList(data) {

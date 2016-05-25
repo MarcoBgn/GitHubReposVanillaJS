@@ -18,7 +18,7 @@ describe("searchRequest", function() {
   })
   
   it('Sets onreadystatechange to the xhttpResponse function', function () {
-    expect(xhttp.onreadystatechange).toEqual(xhttpResponse);
+    expect(xhttp.onreadystatechange).toEqual(xhttpResponseHead);
   })
   
   it('Sends the XMLHttpRequest', function () {

@@ -8,3 +8,10 @@ function generateElement(parentElement, variable, element, id, cssClass) {
   variable.setAttribute('class', cssClass || 'defaultClass');
   return variable
 }
+
+function cleanElement(element) {
+  var element = element;
+  while (element.firstChild) {
+    element.removeChild(element.firstChild);
+  };
+}
