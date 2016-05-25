@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Function: displayFunctions', function () {
+describe('Class: Layout', function () {
   //CSS/layout is not tested.
   var testData, testList;
   
@@ -9,21 +9,21 @@ describe('Function: displayFunctions', function () {
   
   describe('displayHeader()', function () {
     it('parses the data JSON and creates the HTML layout for the user', function () {
-      displayHeader(testData);
+      Layout.displayHeader(testData);
       expect(document.getElementById('usr_img')).toBeDefined();
     });
   });
   
   describe('displayList()', function () {
     it('parses the data JSON and creates the HTML list of Repos ', function () {
-      displayList(testList);
+      Layout.displayList(testList);
       expect(document.getElementById('list_title').innerHTML).toEqual("Repositories");
     });
   });
   
   describe('displayError()', function () {
     it('displays a notice if the username is not found', function () {
-      displayError();
+      Layout.displayError();
       expect(document.getElementById('data_container').className).toEqual('container_error');
       expect(document.getElementById('error_div').innerHTML).toEqual('Does not exist');
     })
