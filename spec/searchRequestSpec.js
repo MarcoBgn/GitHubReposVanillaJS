@@ -1,6 +1,6 @@
 "use strict";
 
-describe("searchRequest", function() {
+describe("Function: searchRequest", function() {
   
   beforeEach(function (done) {
     spyOn(XMLHttpRequest.prototype, "open").and.callThrough();

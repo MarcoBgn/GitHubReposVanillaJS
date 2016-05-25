@@ -12,13 +12,25 @@
     <script src="lib/jasmine-2.4.1/boot.js"></script>
   
     <!-- include source files here... -->
-    <script src="js/ajax.js"></script>
+    <script src="public/js/requestObj.js"></script>
+    <script src="public/js/ajax.js"></script>
+    <script src="public/js/display.js"></script>
+    <script src="public/js/displayHelper.js"></script>
+    
+    
     
     <!-- include spec files here... -->
+    <script src="spec/displaySpec.js"></script>
     <script src="spec/searchRequestSpec.js"></script>
-  
+    <script src="spec/requestObjectSpec.js"></script>
+    
+    
   </head>
   
   <body>
+    <div id="data_container">
+      <div id="user_info">
+      </div>
+    </div>
   </body>
 </html>

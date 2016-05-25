@@ -4,7 +4,6 @@ function displayError() {
   var userInfo = document.getElementById('user_info'), userError;
   
   cleanElement(userInfo);
-  
   document.getElementById('data_container').setAttribute('class', 'container_error');
   
   generateElement(userInfo, userError, 'div', 'error_div')
@@ -16,7 +15,6 @@ function displayHeader(data) {
   response = JSON.parse(data);
   
   cleanElement(userInfo);
-  
   document.getElementById('data_container').setAttribute('class', 'container_data');
   
   generateElement(userInfo, userAvatar, 'img', 'user_img')
