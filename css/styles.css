@@ -2,13 +2,13 @@ body {
   background-color: lightgray;
 }
 
-.container {
+.container_form {
   background-color: white;
   width: 450px;
   height: 40px;
   padding: 25px 25px 25px 25px;
   border: solid thin lightgray;
-  border-radius: 15px;
+  border-radius: 16px 10px;
   
   position: absolute;
   top: 0;
@@ -19,18 +19,70 @@ body {
   margin: auto;
   
   -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 }
 
-.input_text {
-  width: 200px;
+.container_data {
+  background-color: white;
+  width: 450px;
+  min-height: 40px;
+  padding: 25px 25px 25px 25px;
+  border: solid thin lightgray;
+  border-radius: 16px 10px;
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  margin: auto;
+  
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+#input_text {
+  width: 300px;
   height: 28px;
 }
 
-.input_button {
+#input_button {
   border: solid thin lightgray;
   border-radius: 5px;
   width: 80px;
   height: 36px;
+}
+
+#input_button:hover {
+  opacity: 0.8;
+  border: solid thin lightgray;
+  border-radius: 5px;
+  width: 80px;
+  height: 36px;
+}
+
+#user_img {
+  position: relative;
+  padding: 10px 5px 5px 0px;
+  width: 75px;
+  height: 75px;
+}
+
+#user_uname {
+  position: relative;
+  top: -100px;
+  left: 85px;
+}
+
+#user_fullname {
+  position: relative;
+  top: -120px;
+  left: 85px;
+}
+
+#user_bio {
+  position: relative;
+  top: -142px;
+  left: 85px;
 }

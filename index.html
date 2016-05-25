@@ -8,12 +8,17 @@
     <title>Marfeel GiHub Repos</title>
 </head>
   <body>
-    <div class="container">
+    <div id="data_container" class="container_form">
       <form class="search_form">
-        <input class="input_text" type="text" value="" name="query" placeholder="Search username...">
-        <input class="input_button" type="submit" value="Search" name="submit">
+        <input id="input_text" type="text" value="" name="query" placeholder="Search username...">
+        <input id="input_button" type="button" value="search" name="submit" onclick="searchRequest(document.getElementById('input_text'));">
       </form>
-    </div>
+      
+      <div id="user_info">
+      </div>
+    </div> <!-- container -->
 
+  <script src="js/display.js"></script>
+  <script src="js/ajax.js"></script>
   </body>
 </html>
