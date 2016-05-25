@@ -29,8 +29,6 @@ function displayHeader(data) {
 
 function displayList(data) {
   var response, userInfo; 
-  console.log(data.constructor);
-  console.log(typeof data);
   response = JSON.parse(data);
   userInfo = document.getElementById('user_info');
   
