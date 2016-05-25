@@ -31,7 +31,7 @@ function searchRequest(username) {
   xhttp.onreadystatechange = xhttpResponseHead;
   xhttp.send();
   
-  xhttpList.open('GET', 'https:/api.github.com/users/' + username + '/repos', true)
+  xhttpList.open('GET', (url + '/repos'), true)
   xhttpList.onreadystatechange = xhttpResponseList;
   xhttpList.send(); 
 }
