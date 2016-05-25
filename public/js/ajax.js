@@ -25,13 +25,13 @@ function xhttpResponseList() {
 
 function searchRequest(username) {
   var username = username.value;
-  var url = ('https://api.github.com/users/' + username + '?access_token=f2384d55b3be294629129210cc036353a7bf352f')
+  var url = ('https://api.github.com/users/' + username)
   
   xhttp.open('GET', url, true);
   xhttp.onreadystatechange = xhttpResponseHead;
   xhttp.send();
   
-  xhttpList.open('GET', 'https:/api.github.com/users/' + username + '/repos' + '?access_token=f2384d55b3be294629129210cc036353a7bf352f', true)
+  xhttpList.open('GET', 'https:/api.github.com/users/' + username + '/repos', true)
   xhttpList.onreadystatechange = xhttpResponseList;
   xhttpList.send(); 
 }
