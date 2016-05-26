@@ -29,6 +29,11 @@ We will only evaluate the client side code and the criteria will be based mainly
 1. open `SpecRunner.html` in the browser
 
 
+### Notes 
+
+1. I used ES6 syntactic sugar for class declarations
+1. I swapped the "bio" for "location" in the main User info panel many users leave it blank. 
+
 ## SCREENSHOTS
 
 #### First Screen

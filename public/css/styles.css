@@ -66,9 +66,10 @@ body {
 .repos_list {
   position: relative;
   top: -110px;
-  left: 10px;
+  left: 5px;
   font-weight: bold;
   font-family: "Courier New", Monospace, Serif;
+  font-size: 90%;
 }
 
 .hr_div {
@@ -164,7 +165,9 @@ body {
 #title_hr {
   position: relative;
   top: -135px;
-  height: 3px;
+  height: 1px;
+  background-color: darkgrey;
+  border-color: darkgrey;
 }
 
 #error_div {

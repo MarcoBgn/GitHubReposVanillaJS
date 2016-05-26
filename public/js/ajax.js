@@ -1,7 +1,7 @@
 'use strict';
 
-var xhttp = new UserRequest();
-var xhttpList = new UserRequest();
+let xhttp = new UserRequest();
+let xhttpList = new UserRequest();
 
 function xhttpResponseHead() {
   if (xhttp.status === 200 && xhttp.readyState === 4) {
