@@ -8,7 +8,7 @@ function xhttpResponseHead() {
     var resp = xhttp.responseText;
     Layout.displayHeader(resp);
   } else if (xhttp.readyState <= 3) {
-    Layout.toggleText("Loading......");
+    Layout.toggleText("Loading...");
   } else {
     Layout.displayError();
     Layout.toggleText("");
