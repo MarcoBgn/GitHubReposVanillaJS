@@ -21,7 +21,7 @@ We will only evaluate the client side code and the criteria will be based mainly
 1. Clone the repository
 2. run `bundle install` (To install rack)
 3. run `rackup`
-4. Open the browser with http://localhost:9292/
+4. Point the browser at http://localhost:9292/
 
 
 ### Unit Tests
@@ -32,7 +32,7 @@ We will only evaluate the client side code and the criteria will be based mainly
 ### Notes 
 
 1. I used ES6 syntactic sugar for class declarations
-1. I swapped the "bio" for "location" in the main User info panel many users leave it blank. 
+1. I swapped the "bio" for "location" in the main User info panel, as many users leave it blank. 
 
 ## SCREENSHOTS
 

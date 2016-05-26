@@ -2,6 +2,11 @@
 
 class Layout {
   
+  static toggleText(value) {
+    var text = document.getElementById('input_text');
+    text.value = value;
+  }
+  
   static displayError() {
     var userInfo = document.getElementById('user_info'), userError;
     

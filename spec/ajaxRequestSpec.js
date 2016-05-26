@@ -21,6 +21,11 @@ describe("Function: searchRequest", function() {
     expect(xhttp.onreadystatechange).toEqual(xhttpResponseHead);
   })
   
+  it('Changes the value of input_text to display loading...', function () {
+    expect(document.getElementById('input_text').value).toEqual("Loading...");
+    //it never gets reset because the Ajax request is stubbed and readyState 4 is never reached.
+  })
+  
   it('Sends the XMLHttpRequest', function () {
     expect(xhttp.send()).toEqual("SENT");
   })

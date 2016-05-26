@@ -8,9 +8,10 @@ function xhttpResponseHead() {
     var resp = xhttp.responseText;
     Layout.displayHeader(resp);
   } else if (xhttp.readyState <= 3) {
-     // cool spinner or effect can be added here
+    Layout.toggleText("Loading......");
   } else {
     Layout.displayError();
+    Layout.toggleText("");
   }
 };
 
@@ -18,14 +19,17 @@ function xhttpResponseList() {
   if (xhttpList.status === 200 && xhttpList.readyState === 4) {
     var resp = xhttpList.responseText;
     Layout.displayList(resp);
+    Layout.toggleText("");
+  } else if (xhttp.readyState <= 3) {
+    
   } else {
-    //..
   }
 };
 
 function searchRequest(username) {
   var username = username.value;
   var url = ('https://api.github.com/users/' + username)
+  Layout.toggleText("Loading...");
   
   xhttp.open('GET', url, true);
   xhttp.onreadystatechange = xhttpResponseHead;
