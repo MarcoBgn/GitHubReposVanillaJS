@@ -6,18 +6,18 @@ var xhttpList = new UserRequest();
 function xhttpResponseHead() {
   if (xhttp.status === 200 && xhttp.readyState === 4) {
     var resp = xhttp.responseText;
-    displayHeader(resp);
+    Layout.displayHeader(resp);
   } else if (xhttp.readyState <= 3) {
      // cool spinner or effect can be added here
   } else {
-    displayError();
+    Layout.displayError();
   }
 };
 
 function xhttpResponseList() {
   if (xhttpList.status === 200 && xhttpList.readyState === 4) {
     var resp = xhttpList.responseText;
-    displayList(resp);
+    Layout.displayList(resp);
   } else {
     //..
   }
