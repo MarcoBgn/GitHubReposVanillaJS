@@ -1,8 +1,6 @@
 'use strict';
 
-class UserRequest {
+var UserRequest = function() {
   
-  constructor () {
     return (window.XMLHttpRequest) ? (new XMLHttpRequest()) : (new ActiveXObject('MicrosoftXMLHTTP'));
-  }
 };
