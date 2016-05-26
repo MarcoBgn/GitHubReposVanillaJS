@@ -20,9 +20,6 @@ function xhttpResponseList() {
     var resp = xhttpList.responseText;
     Layout.displayList(resp);
     Layout.toggleText("");
-  } else if (xhttp.readyState <= 3) {
-    
-  } else {
   }
 };
 
