@@ -19,14 +19,15 @@ We will only evaluate the client side code and the criteria will be based mainly
 ## Instructions to Run locally
 
 1. Clone the repository
-2. run `bundle install` (To install rack)
-3. run `rackup`
-4. Point the browser at http://localhost:9292/
+2. run `npm install` 
+3. run `grunt open`
+4. Files will be opened using Google Chrome.
 
+5. To use another browser open `index.html` (app) and `SpecRunner.html` (unit tests). 
 
 ### Unit Tests
 
-1. open `SpecRunner.html` in the browser
+1. running `grunt open` will run unit tests with Jasmine in a separate tab.
 
 ### JShint
 
