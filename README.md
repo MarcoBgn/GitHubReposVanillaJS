@@ -28,6 +28,10 @@ We will only evaluate the client side code and the criteria will be based mainly
 
 1. open `SpecRunner.html` in the browser
 
+### JShint
+
+1. run `grunt jshint` to check for syntax with JShint
+
 
 ### Notes 
 

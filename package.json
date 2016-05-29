@@ -8,7 +8,8 @@
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.9.0",
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0"
   },
   "description": "## GOALS",
   "main": "userRequest.js",
