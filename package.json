@@ -1,12 +1,32 @@
 {
-  "name": "GitHub-Repos-VanillaJS",
-  "version": "1.0.0",
+  "name": "github-repos-vanilla-js",
+  "version": "0.1.0",
   "babel": {
     "presets": [
       "es2015"
     ]
   },
   "devDependencies": {
-    "babel-preset-es2015": "^6.9.0"
-  }
+    "babel-preset-es2015": "^6.9.0",
+    "grunt": "^1.0.1"
+  },
+  "description": "## GOALS",
+  "main": "userRequest.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoCode/GitHubReposVanillaJS.git"
+  },
+  "keywords": [
+    "vanilla"
+  ],
+  "author": "MarcoCode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoCode/GitHubReposVanillaJS/issues"
+  },
+  "homepage": "https://github.com/MarcoCode/GitHubReposVanillaJS#readme"
 }
