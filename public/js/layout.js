@@ -1,5 +1,3 @@
-'use strict';
-
 class Layout {
   
   static toggleText(value) {
@@ -56,4 +54,4 @@ class Layout {
       .setAttribute('src', 'images/glyphicons-309-share-alt.png');
     }
   }
-};
+}

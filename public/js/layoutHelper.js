@@ -1,17 +1,17 @@
-'use strict';
-
 function generateElement(parentElement, variable, element, id, cssClass) {
-  var variable = variable;
-  variable = document.createElement(element);
-  parentElement.appendChild(variable);
-  variable.setAttribute('id', id);
-  variable.setAttribute('class', cssClass || 'defaultClass');
-  return variable
+  'use strict';
+  var elementVariable = variable;
+  elementVariable = document.createElement(element);
+  parentElement.appendChild(elementVariable);
+  elementVariable.setAttribute('id', id);
+  elementVariable.setAttribute('class', cssClass || 'defaultClass');
+  return elementVariable;
 }
 
 function cleanElement(element) {
-  var element = element;
-  while (element.firstChild) {
-    element.removeChild(element.firstChild);
-  };
+  'use strict';
+  var elementVariable = element;
+  while (elementVariable.firstChild) {
+    elementVariable.removeChild(element.firstChild);
+  }
 }
