@@ -70,6 +70,8 @@ body {
   font-weight: bold;
   font-family: "Courier New", Monospace, Serif;
   font-size: 90%;
+  border-bottom: solid thin;
+  padding-bottom: 1em;
 }
 
 .hr_div {
@@ -80,30 +82,33 @@ body {
 .glyphicons_star {
   position: relative;
   width: 5px;
-  top: -145px;
+  top: -153px;
   left: 408px;
+  float: left;
 }
 
 .glyphicons_star_img {
   width: 15px;
   height: 15px;
   position: relative;
-  top: -143px;
-  left: 360px;
+  top: -153px;
+  left: 380px;
+  float: left;
 }
 
 .glyphicons_fork {
   position: relative;
-  top: -145px;
-  left: 430px;
+  top: -153px;
+  left: 436px;
 }
 
 .glyphicons_fork_img {
   width: 15px;
   height: 15px;
   position: relative;
-  top: -143px;
-  left: 390px;
+  top: -153px;
+  left: 430px;
+  float: left;
 }
 
 #input_text {
