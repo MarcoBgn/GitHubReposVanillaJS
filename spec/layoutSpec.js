@@ -28,4 +28,11 @@ describe('Class: Layout', function () {
       expect(document.getElementById('error_div').innerHTML).toEqual('Does not exist');
     })
   })
+  
+  describe('toggleText()', function () {
+    it('toggles the loading text in the search bar', function () {
+      Layout.toggleText("Test");
+      expect(document.getElementById('input_text').value).toEqual("Test");
+    })
+  })
 })

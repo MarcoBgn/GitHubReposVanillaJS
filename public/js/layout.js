@@ -54,7 +54,6 @@ class Layout {
       .innerHTML = response[i].forks;
       generateElement(userInfo, null, 'img', null, 'glyphicons_fork_img' )
       .setAttribute('src', 'images/glyphicons-309-share-alt.png');
-      generateElement(userInfo, response[i].id, 'hr', 'hr_list', 'hr_div');
     }
   }
 };
