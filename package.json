@@ -1,0 +1,12 @@
+{
+  "name": "GitHub-Repos-VanillaJS",
+  "version": "1.0.0",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0"
+  }
+}
