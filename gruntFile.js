@@ -15,9 +15,20 @@ module.exports = function (grunt) {
           "jQuery": false
         }
       }
+    },
+    open: {
+      dev: {
+        path: 'public/index.html',
+        app: 'Google Chrome'
+      },
+      file: {
+        path: 'SpecRunner.html', 
+        app: 'Google Chrome'
+      }
     }
   });
   
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.registerTask('default', []);
+  grunt.loadNpmTasks('grunt-open');
+  grunt.registerTask('default', ['open']);
 };
